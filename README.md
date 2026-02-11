@@ -1,4 +1,3 @@
-[towing.html](https://github.com/user-attachments/files/25224350/towing.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
