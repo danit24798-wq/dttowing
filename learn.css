@@ -7,22 +7,22 @@ body{
     color: black;
 }   
 .modeN{
-    background-image: url("img/backp.png");
+    background-image: url("backp.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .modeL{
-    background-image: url("img/lightM.jpg");
+    background-image: url("lightM.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .modeG{
-    background-image: url("img/greyM.avif");
+    background-image: url("greyM.avif");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .modeD{
-    background-image: url("img/darkM.jpg");
+    background-image: url("darkM.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 } 
@@ -320,4 +320,5 @@ span{
     .aboutUs video{ 
         width: 85%;
      }
+
 }
