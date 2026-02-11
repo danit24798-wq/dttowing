@@ -150,7 +150,7 @@
                         <li>Expertos locales en los que puede confiar</li>
                     </ul>
                 </div> 
-                <img src="img/proto2.png" alt="ex1"> 
+                <img src="proto2.png" alt="ex1"> 
             </div>
             <div class="aboutUs mdS reveal">
                 <div>
@@ -215,7 +215,7 @@
     </div>
     <div id="French">
         <div class="titles">
-            <img src="img/protoT.jpg" alt="titleiSSS">
+            <img src="protoT.jpg" alt="titleiSSS">
         </div>
         <div class="navBarT">
             <div class="bt2">APPELER : (509) 480-8771</div>   
@@ -249,7 +249,7 @@
                         <li>Experts locaux sur ceux que vous pouvez confier</li> 
                     </ul>
                 </div> 
-                <img src="img/proto2.png" alt="ex1"> 
+                <img src="proto2.png" alt="ex1"> 
             </div>
             <div class="aboutUs mdS reveal">
                 <div>
@@ -314,7 +314,7 @@
     </div>
     <div id="Philippine">
         <div class="titles">
-            <img src="img/protoT.jpg" alt="titleiSSS">
+            <img src="protoT.jpg" alt="titleiSSS">
         </div>
         <div class="navBarT">
             <div class="bt2">TUMAWAG SA: (509) 480-8771</div>
@@ -348,7 +348,7 @@
                         <li>Mga lokal na eksperto na mapagkakatiwalaan mo</li> 
                     </ul>
                 </div> 
-                <img src="img/proto2.png" alt="ex1"> 
+                <img src="proto2.png" alt="ex1"> 
             </div>
             <div class="aboutUs mdS reveal">
                 <div>
