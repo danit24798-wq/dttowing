@@ -50,7 +50,7 @@
                 </div>
                     
                 
-                <img src="img/proto2.png" alt="ex1"> 
+                <img src="proto2.png" alt="ex1"> 
             </div>
             <div class="aboutUs mdS reveal">
                 <h2>About Us</h2>
