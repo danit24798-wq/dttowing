@@ -76,9 +76,14 @@ span{
     display: grid;
     grid-template-columns: 1fr 1fr;
 } 
-.moreInfo h2, .moreInfo h3{
+.moreInfo h2{
     grid-column-start: 1;
     grid-column-end: 2;
+    text-align: center;
+} 
+.moreInfo h3{
+    grid-column-start: 3;
+    grid-column-end: 5;
     text-align: center;
 } 
 .aboutUs video{
@@ -340,6 +345,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
