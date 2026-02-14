@@ -76,7 +76,7 @@ span{
     display: grid;
     grid-template-columns: 1fr 1fr;
 } 
-.moreInfo h2,.moreInfo h3{
+.moreInfo h2, .moreInfo h3{
     grid-column-start: 1;
     grid-column-end: 2;
     text-align: center;
@@ -340,6 +340,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
