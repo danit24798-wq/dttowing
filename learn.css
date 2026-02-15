@@ -76,11 +76,6 @@ span{
     display: grid;
     grid-template-columns: 1fr 1fr;
 } 
-.moreInfo h2, .moreInfo h3{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: center;
-}  
 .aboutUs video{
     width: 85%;
     filter: drop-shadow(18px 18px 20px black);
@@ -178,6 +173,11 @@ span{
     border-radius: 28px;
     color: rgb(176, 167, 167);
 }
+.moreInfo h2, .moreInfo h3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}  
 /*Adjustments for any larger users*/
 @media(min-width: 976px){
     .navBarT{
@@ -340,6 +340,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
