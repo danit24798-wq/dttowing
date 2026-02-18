@@ -36,7 +36,7 @@ body{
 }
 
 .map-container iframe {
-    width: 100%;
+    width: 85%;
     height: 100%;
     border: 0;
 }
@@ -360,6 +360,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
