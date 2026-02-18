@@ -116,7 +116,6 @@ span{
     border-radius: 28px;
     color: rgba(255, 217, 0, 0.829); 
 }
-
 .content{
     padding: 20px;
     margin: 10px;
@@ -204,6 +203,11 @@ span{
         grid-column-end: 3;
         text-align: center;
     } 
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:5px;
+    }
 }
 /*Adjustments for notepad users*/
 @media(max-width: 976px){ 
@@ -354,6 +358,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
