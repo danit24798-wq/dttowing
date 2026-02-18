@@ -81,6 +81,7 @@ span{
     grid-template-columns: 1fr 1fr;
 } 
 .gallery img{
+    padding-left:15px;
     height: 250px;
 }
 .aboutUs video{
@@ -359,6 +360,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
