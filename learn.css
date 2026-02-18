@@ -246,8 +246,7 @@ span{
         grid-column-end: 3;
         text-align: center;
         font-size: larger;
-    }
-    
+    } 
 } 
  
 @media(max-width: 832px){
@@ -360,6 +359,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
