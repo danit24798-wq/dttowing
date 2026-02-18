@@ -27,14 +27,13 @@ body{
     background-size: cover;
 } 
 .map-container {
-    width: 100%;
+    width: 95%;
     max-width: 900px;
-    height: 400px;   /* THIS is the key line */
+    height: 400px;
     margin: 20px auto;
     border-radius: 12px;
     overflow: hidden;
 }
-
 .map-container iframe {
     width: 85%;
     height: 100%;
@@ -91,7 +90,6 @@ span{
 .modS, .langS{
     display: none;
 }
-
 .filterShow{ 
     display: grid; 
     grid-template-columns: repeat(4, 1fr);
@@ -109,8 +107,7 @@ span{
 .modeS, .lanS{
     color: black;
     text-align: center;
-}
-  
+} 
 .hvL:hover, .hvM:hover{ 
     background-color: black; 
     border-radius: 28px;
@@ -145,27 +142,22 @@ span{
     opacity: 0;
     transition: 1s all ease;
 }
-
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
 }
-
 .ligthM {
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: black;
 }
-
 .darkMode {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
-
 .greyMd {
-  background-color: rgb(61,57,57);
-  color: rgb(176,167,167);
+    background-color: rgb(61,57,57);
+    color: rgb(176,167,167);
 }
-
 .ligthMM{
     background-color: white;
     border-radius: 28px;
@@ -180,12 +172,7 @@ span{
     background-color: rgb(61, 57, 57);
     border-radius: 28px;
     color: rgb(176, 167, 167);
-}
-.moreInfo h2, .moreInfo h3{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: center;
-}  
+} 
 /*Adjustments for any larger users*/
 @media(min-width: 976px){
     .navBarT{
@@ -209,6 +196,11 @@ span{
         text-align: center;
         font-size: larger;
     }
+    .moreInfo h2, .moreInfo h3{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    } 
 }
 /*Adjustments for notepad users*/
 @media(max-width: 976px){ 
@@ -348,7 +340,6 @@ span{
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .itT{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -359,6 +350,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
