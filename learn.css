@@ -64,6 +64,9 @@ h1, h2{
     height: 195px;
     filter: none;
 }
+.content img{
+    height:85%;
+}  
 .navBarT{
     background-color: rgba(255, 217, 0, 0.829);
 }
@@ -351,6 +354,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
