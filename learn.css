@@ -227,7 +227,8 @@ span{
     } 
     .gallery{
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding:5px;
     } 
     .footer{
         display: grid;
@@ -350,6 +351,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
