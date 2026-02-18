@@ -302,7 +302,7 @@ span{
      } 
 }
 /*menu adjustment for smartphones*/
-@media(max-width: 607px){
+@media(max-width: 755px){
     body{
         font-size: 30px;
     }
@@ -359,6 +359,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
