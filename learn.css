@@ -78,7 +78,7 @@ span{
 } 
 .gallery{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 } 
 .aboutUs video{
     width: 85%;
@@ -228,7 +228,11 @@ span{
     .tryIt, .aboutUs, .moreInfo{ 
         display: grid;
         grid-template-columns: 1fr;
-    }  
+    } 
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
     .footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -267,6 +271,10 @@ span{
         grid-column-end: 3;
     }
     .tryIt, .aboutUs, .moreInfo{ 
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+    .gallery{
         display: grid;
         grid-template-columns: 1fr;
     } 
@@ -323,6 +331,10 @@ span{
         display: grid;
         grid-template-columns: 1fr;
     } 
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
     h1{
         font-size: 50px;
     }
@@ -344,6 +356,7 @@ span{
         width: 85%;
      }
 }
+
 
 
 
