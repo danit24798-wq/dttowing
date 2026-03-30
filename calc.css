@@ -1,0 +1,59 @@
+.containerCal {
+    width: 95%;
+    margin: 10px auto; 
+    background-color: black;
+    color: gold;
+    padding: 20px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.rightCal { 
+    background: gold;
+    color: black;
+    padding: 10px; 
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h2Cal {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold; 
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+input{
+    width: 95%;
+}
+
+.costCal {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.buttonCal {
+    margin-top: 15px;
+    padding: 10px;
+    width: 90%;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+small, .redL {
+    color: red;
+}
