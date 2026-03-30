@@ -1,11 +1,10 @@
 $(document).ready(function(){
   $("#Spanish").hide();
-  $("#Philippine").hide();
-  $("#French").hide();
+  $("#Philippine").hide(); 
   $("#English").show();   
   
   $(".modeS").click(function(){
-    $(".modS").toggleClass("filterShow");  
+    $(".modS").toggleClass("filterShowM");  
   }); 
   $(".lanS").click(function(){ 
     $(".langS").toggleClass("filterShow");
@@ -55,12 +54,11 @@ $(document).ready(function(){
   });
 
   function showLang(lang) {
-    $("#English, #Spanish, #French, #Philippine").hide();
+    $("#English, #Spanish, #Philippine").hide();
     $("#" + lang).show();
   }
 
-  $(".lan1").click(() => showLang("Spanish"));
-  $(".lan2").click(() => showLang("French"));
+  $(".lan1").click(() => showLang("Spanish")); 
   $(".lan3").click(() => showLang("English"));
   $(".lan4").click(() => showLang("Philippine"));
 });
