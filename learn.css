@@ -29,7 +29,7 @@ body{
 .map-container {
     width: 95%;
     max-width: 900px;
-    height: 400px;
+    height: 600px;
     margin: 15px auto;
     border-radius: 12px;
     overflow: hidden;
@@ -64,9 +64,10 @@ h1, h2{
     height: 115px;
     filter: none;
 }
-.moreInfo img { 
-    height: 750px;
-    width: 650px;
+.moreInfo img {  
+    height:600px;
+    width: 95%;
+    max-width: 900px;
     padding-bottom: 15px;
 }
 .mySlideB {display: none}
@@ -89,15 +90,7 @@ h1, h2{
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 13px}
-}
-.content img{
-    height:85%;
-}  
+} 
 .navBarT{
     background-color: rgba(255, 217, 0, 0.829);
 }
@@ -110,11 +103,6 @@ span{
     grid-template-columns: 1fr 1fr;
 } 
 
-.moreInfo img{
-    padding-left:15px;
-    height: 250px;
-    padding-bottom: 15px;
-}
 .aboutUs video{
     width: 95%;
     padding-left: 15px;
@@ -124,9 +112,9 @@ span{
 .modS, .langS{
     display: none;
 }
-.filterShow{ 
+.filterShow, .filterShowM{ 
     display: grid; 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 15px;
     margin-right: 15px;
     padding: 15px;
@@ -134,10 +122,11 @@ span{
     text-align: center; 
     background-color: rgba(255, 217, 0, 0.829);
     border-radius: 15px;
-}
-.content div {
-    border-radius: 15px;
-}
+} 
+.filterShowM{ 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+} 
 .modeS, .lanS{
     color: black;
     text-align: center;
@@ -149,10 +138,7 @@ span{
 }
 .content{
     padding: 15px;
-}
-.content div{
-    padding: 15px;
-}
+} 
 .mdS, .tryIt{ 
     background-color: rgba(255, 217, 0, 0.829);
     padding: 15px; 
@@ -211,12 +197,20 @@ span{
     margin-right: 15px;
     padding: 15px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: 1fr 1fr 1fr; 
     border-radius: 15px;
     text-align: center;  
 }
 /*Adjustments for any larger users*/
 @media(min-width: 976px){
+    .navBarT{
+        margin-top: 145px;  
+        padding: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        border-radius: 15px;
+        text-align: center;  
+    }
     .tryIt h1, .aboutUs h2, .moreInfo h2{
         grid-column-start: 1;
         grid-column-end: 3;
@@ -237,25 +231,37 @@ span{
 /*Adjustments for notepad users*/
 @media(max-width: 976px){ 
     body{
-        font-size: 15px;
+        font-size: 25px;
     }
-    .navBarT{
-        margin-left: 15px;
-        margin-right: 15px;
-        padding: 15px;
+    .navBarT{ 
+        padding: 25px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: 1fr 1fr 1fr; 
         border-radius: 15px;
         text-align: center;  
     }
-    .bt2{
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
+    .filterShow{ 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+        padding: 25px;
+        margin-top: 0px;
+        text-align: center;  
+        border-radius: 15px;
+    } 
+    .filterShowM{ 
+        display: grid; 
+        grid-template-columns: repeat(4, 1fr); 
+    } 
     .tryIt, .aboutUs, .moreInfo{ 
         display: grid;
         grid-template-columns: 1fr;
-    }  
+    } 
+    h1{
+        font-size: 45px;
+    }
+    h2{
+        font-size: 30px;
+    } 
     .footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -266,6 +272,9 @@ span{
         text-align: center;
         font-size: larger;
     } 
+    .aboutUs video{ 
+        width: 95%;
+    } 
 } 
  
 @media(max-width: 832px){
@@ -275,22 +284,22 @@ span{
     .navBarT{ 
         padding: 15px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: 1fr 1fr 1fr; 
         border-radius: 15px;
         text-align: center;  
     }
     .filterShow{ 
         display: grid; 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         padding: 15px;
         margin-top: 0px;
         text-align: center;  
         border-radius: 15px;
-    }
-    .bt2{
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
+    } 
+    .filterShowM{ 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
     .tryIt, .aboutUs, .moreInfo{ 
         display: grid;
         grid-template-columns: 1fr;
@@ -313,12 +322,12 @@ span{
     }
     .aboutUs video{ 
         width: 85%;
-     } 
+    } 
 }
 /*menu adjustment for smartphones*/
 @media(max-width: 755px){
     body{
-        font-size: 15px;
+        font-size: 30px;
     }
     .navBarT{
         margin-left: 15px;
@@ -330,7 +339,7 @@ span{
     }
     .filterShow{ 
         display: grid; 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         margin-left: 15px;
         margin-right: 15px;
         padding: 15px;
@@ -338,6 +347,10 @@ span{
         text-align: center;  
         border-radius: 15px;
     }
+    .filterShowM{ 
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
     .bt2{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -366,4 +379,28 @@ span{
     .aboutUs video{ 
         width: 85%;
      }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 476px) {
+    body{
+        font-size: 35px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    .prev, .next,.text {font-size: 13px}
+    .filterShow{ 
+        display: grid; 
+        grid-template-columns: 1fr; 
+    }
+    .filterShowM{ 
+        display: grid; 
+        grid-template-columns: 1fr; 
+    } 
 }
