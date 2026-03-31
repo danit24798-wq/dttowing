@@ -10,6 +10,12 @@ function plusSlidesPh(n) {
 function plusSlidesVd(n) {
   showSlidesVid(slideIndex += n);
 }
+function plusSlidesVdSpa(n) {
+  showSlidesVidSpa(slideIndex += n);
+}
+function plusSlidesVdPh(n) {
+  showSlidesVidPh(slideIndex += n);
+}
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -56,8 +62,30 @@ function showSlidesVid(n) {
   } 
   slides[slideIndex-1].style.display = "block";  
 }
+function showSlidesVidSpa(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlideVidSpa");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  } 
+  slides[slideIndex-1].style.display = "block";  
+}
+function showSlidesVidPh(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlideVidPh");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  } 
+  slides[slideIndex-1].style.display = "block";  
+}
 let slideIndex = 1;
 showSlides(slideIndex); 
 showSlidesSpa(slideIndex); 
 showSlidesPh(slideIndex); 
 showSlidesVid(slideIndex);
+showSlidesVidSpa(slideIndex);
+showSlidesVidPh(slideIndex);
