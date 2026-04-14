@@ -1,50 +1,50 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const distance = document.getElementById("distance");
-  const distanceInput = document.getElementById("distanceInput");
-  const distanceValue = document.getElementById("distanceValue");
-  const location = document.getElementById("location");
-  const baseRate = document.getElementById("locationRate");
-  const total = document.getElementById("total");
 
-  function calculateCost() {
-    const miles = parseFloat(distance.value) || 0;
-    const rate = parseFloat(baseRate.value) || 0;
+  const calculators = document.querySelectorAll(".containerCal");
 
-    const costPerMile = 15;
-    const totalCost = rate + (miles * costPerMile);
+  calculators.forEach((calc) => {
+    const distance = calc.querySelector(".distance");
+    const distanceInput = calc.querySelector(".distanceInput");
+    const distanceValue = calc.querySelector(".distanceValue");
+    const location = calc.querySelector(".location");
+    const baseRate = calc.querySelector(".locationRate");
+    const total = calc.querySelector(".total");
 
-    total.textContent = totalCost.toFixed(0);
-  }
+    function calculateCost() {
+      const miles = parseFloat(distance.value) || 0;
+      const rate = parseFloat(baseRate.value) || 0;
 
-  // Sync slider → input
-  distance.addEventListener("input", () => {
-    distanceInput.value = distance.value;
-    distanceValue.textContent = distance.value;
-    calculateCost();
-  });
+      const costPerMile = 15;
+      const totalCost = rate + (miles * costPerMile);
 
-  // Sync input → slider
-  distanceInput.addEventListener("input", () => {
-    let value = parseInt(distanceInput.value) || 0;
-
-    if (value < 1) value = 1;
-    if (value > 120){
-      value = 0;
-      
+      total.textContent = totalCost.toFixed(0);
     }
 
-    distance.value = value;
-    distanceValue.textContent = value;
-    calculateCost();
-  });
- 
-  location.addEventListener("change", () => {
-    baseRate.value = location.value;
+    // Slider → Input
+    distance.addEventListener("input", () => {
+      distanceInput.value = distance.value;
+      distanceValue.textContent = distance.value;
+      calculateCost();
+    });
+
+    // Input → Slider
+    distanceInput.addEventListener("input", () => {
+      let value = parseInt(distanceInput.value) || 0;
+      if (value < 1) value = 1;
+      if (value > 100) value = 100;
+
+      distance.value = value;
+      distanceValue.textContent = value;
+      calculateCost();
+    });
+    // Location change
+    location.addEventListener("change", () => {
+      baseRate.value = location.value;
+      calculateCost();
+    });
+    baseRate.addEventListener("input", calculateCost);
+
     calculateCost();
   });
 
-  // If user edits rate manually
-  baseRate.addEventListener("input", calculateCost);
-
-  calculateCost();
 });
