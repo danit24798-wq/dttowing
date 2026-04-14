@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const miles = parseFloat(distance.value) || 0;
     const rate = parseFloat(baseRate.value) || 0;
 
-    const costPerMile = 10;
+    const costPerMile = 15;
     const totalCost = rate + (miles * costPerMile);
 
     total.textContent = totalCost.toFixed(0);
