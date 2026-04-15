@@ -394,6 +394,10 @@ span{
     h3{
         font-size: 30px;
     }
+    img{
+        width:70%;
+        height:60%;
+    }
     .prev, .next,.text {font-size: 13px}
     .filterShow{ 
         display: grid; 
