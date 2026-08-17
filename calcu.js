@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Input → Slider
     distanceInput.addEventListener("input", () => {
       let value = parseInt(distanceInput.value) || 0;
+
       if (value < 1) value = 1;
       if (value > 100) value = 100;
 
@@ -37,11 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
       distanceValue.textContent = value;
       calculateCost();
     });
+
     // Location change
     location.addEventListener("change", () => {
       baseRate.value = location.value;
       calculateCost();
     });
+
+    // Manual rate edit
     baseRate.addEventListener("input", calculateCost);
 
     calculateCost();
