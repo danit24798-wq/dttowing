@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const miles = parseFloat(distance.value) || 0;
       const rate = parseFloat(baseRate.value) || 0;
 
-      const costPerMile = 15;
+      const costPerMile = 10;
       const totalCost = rate + (miles * costPerMile);
 
       total.textContent = totalCost.toFixed(0);
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let value = parseInt(distanceInput.value) || 0;
 
       if (value < 1) value = 1;
-      if (value > 100) value = 100;
+      if (value > 150) value = 150;
 
       distance.value = value;
       distanceValue.textContent = value;
