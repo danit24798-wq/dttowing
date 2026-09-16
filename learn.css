@@ -47,6 +47,9 @@ img {
 h1, h2{
     text-align: center;
 }
+.noBullet{
+    list-style-type: none;
+}
 .titles{ 
     padding: 0%; 
     margin-top: 15px;
