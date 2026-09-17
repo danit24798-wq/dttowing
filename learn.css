@@ -214,7 +214,7 @@ span{
         border-radius: 15px;
         text-align: center;  
     }
-    .tryIt h1, .aboutUs h2, .moreInfo h2{
+    .tryIt .titles, .aboutUs h2, .moreInfo h2{
         grid-column-start: 1;
         grid-column-end: 3;
         text-align: center; 
