@@ -51,7 +51,7 @@ $(document).ready(function(){
 
   $(".lan1").click(() => window.location.replace("spanish.html"));
 
-  $(".lan3").click(() => window.location.replace("dt-towing.com"));
+  $(".lan3").click(() => window.location.replace("index.html"));
   
   $(".lan4").click(() => window.location.replace("philippines.html"));
 });
