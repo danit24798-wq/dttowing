@@ -1,8 +1,4 @@
-$(document).ready(function(){
-  $("#Spanish").hide();
-  $("#Philippine").hide(); 
-  $("#English").show();   
-  
+$(document).ready(function(){ 
   $(".modeS").click(function(){
     $(".modS").toggleClass("filterShowM");  
   }); 
