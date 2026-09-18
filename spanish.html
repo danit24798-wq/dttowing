@@ -99,22 +99,37 @@
                 <div class="containerCal">
                     <div class="leftCal">
                         <h2 class="h2Cal">Calculadora de Costos</h2>
-
+                
                         <label>Distancia de remolque ($10 por milla)</label>
-                        <input type="range" id="distance" min="1" max="150" value="10">
-                        <input type="number" id="distanceInput" value="10" min="1" max="150">
-                        <p><span id="distanceValue">10</span> millas y <span class="redL">no puede exceder 100 millas</span></p>
-
+                
+                        <input type="range"
+                               class="distance"
+                               min="1"
+                               max="100"
+                               value="10">
+                
+                        <input type="number"
+                               class="distanceInput"
+                               value="10"
+                               min="1"
+                               max="100">
+                
+                        <p>
+                            <span class="distanceValue">10</span> millas
+                            y <span class="redL">no puede exceder 100 millas</span>
+                        </p>
+                
                         <label>Vehículo o Carga Sobredimensionada</label>
-
+                
                         <label>Ciudad/Pueblo de recogida</label>
-                        <select id="location">
+                
+                        <select class="location">
                             <option value="25">Wapato, WA</option>
                             <option value="30">Union Gap, WA</option>
-                            <option value="30">Toppenish, WA</option> 
+                            <option value="30">Toppenish, WA</option>
                             <option value="30">Buena, WA</option>
                             <option value="30">Harrah, WA</option>
-                            <option value="35">Zillah, WA</option> 
+                            <option value="35">Zillah, WA</option>
                             <option value="40">Yakima, WA</option>
                             <option value="40">Granger, WA</option>
                             <option value="50">Moxee, WA</option>
@@ -128,23 +143,35 @@
                             <option value="80">Tieton, WA</option>
                             <option value="80">Cowiche, WA</option>
                             <option value="85">Naches, WA</option>
-                            <option value="85">Tieton, WA</option>
                             <option value="85">Prosser, WA</option>
                             <option value="110">Ellensburg, WA</option>
                         </select>
-
-                        <label>Tarifa de ubicación ($)</label> 
-                        <input type="number" id="locationRate" value="25">
-                        <small>Esta es la tarifa cobrada según la ubicación de recogida.</small>
+                
+                        <label>Tarifa de ubicación ($)</label>
+                
+                        <input type="number"
+                               class="locationRate"
+                               value="25">
+                
+                        <small>
+                            Esta es la tarifa cobrada según la ubicación de recogida.
+                        </small>
                     </div>
-
+                
                     <div class="rightCal">
                         <h2>Costo Total</h2>
-                        <div class="costCal">$<span id="total">0</span></div>
+                
+                        <div class="costCal">
+                            $<span class="total">125</span>
+                        </div>
+                
                         <p>Costos totales mostrados en USD</p>
-
-                        <h4>Remolque su vehículo fácilmente</h4> 
-                        <div class="buttonCal">Contáctenos: (509) 480-8771</div>
+                
+                        <h4>Remolque su vehículo fácilmente</h4>
+                
+                        <div class="buttonCal">
+                            Contáctenos: (509) 480-8771
+                        </div>
                     </div>
                 </div>
             </div>            
