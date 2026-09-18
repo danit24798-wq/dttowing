@@ -53,12 +53,9 @@ $(document).ready(function(){
     $("body").removeClass("modeD modeL modeG").addClass("modeN");
   });
 
-  function showLang(lang) {
-    $("#English, #Spanish, #Philippine").hide();
-    $("#" + lang).show();
-  }
+  $(".lan1").click(() => window.location.replace("spanish.html"));
 
-  $(".lan1").click(() => showLang("Spanish")); 
-  $(".lan3").click(() => showLang("English"));
-  $(".lan4").click(() => showLang("Philippine"));
+  $(".lan3").click(() => window.location.replace("index.html"));
+  
+  $(".lan4").click(() => window.location.replace("philippine.html"));
 });
