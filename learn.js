@@ -57,5 +57,5 @@ $(document).ready(function(){
 
   $(".lan3").click(() => window.location.replace("index.html"));
   
-  $(".lan4").click(() => window.location.replace("philippine.html"));
+  $(".lan4").click(() => window.location.replace("philippines.html"));
 });
